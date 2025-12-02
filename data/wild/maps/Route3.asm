@@ -9,7 +9,7 @@ Route3WildMons:
 	db 11, ODDISH
 	db 12, RATTATA
 	db 13, SPEAROW
-	db 14, SPEAROW
+	db 12, FEAROW
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
