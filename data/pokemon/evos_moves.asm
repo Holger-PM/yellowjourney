@@ -605,7 +605,6 @@ BlastoiseEvosMoves:
 	db 27, BODY_SLAM
 	db 31, WITHDRAW
 	db 33, WATERFALL
-	db 39, ICE_PUNCH
 	db 42, SKULL_BASH
 	db 45, ICE_BEAM
 	db 52, HYDRO_PUMP
@@ -727,8 +726,7 @@ SlowpokeEvosMoves:
 
 KadabraEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, ALAKAZAM
-	db EVOLVE_LEVEL, 44, ALAKAZAM
+	db EVOLVE_LEVEL, 42, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -741,8 +739,7 @@ KadabraEvosMoves:
 
 GravelerEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GOLEM
-	db EVOLVE_LEVEL, 44, GOLEM
+	db EVOLVE_LEVEL, 38, GOLEM
 	db 0
 ; Learnset
 	db 6, DEFENSE_CURL
@@ -771,8 +768,7 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, MACHAMP
-	db EVOLVE_LEVEL, 44, MACHAMP
+	db EVOLVE_LEVEL, 38, MACHAMP
 	db 0
 ; Learnset
 	db 5, LEER
@@ -1122,7 +1118,7 @@ DoduoEvosMoves:
 
 PoliwagEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 25, POLIWHIRL
+	db EVOLVE_LEVEL, 18, POLIWHIRL
 	db 0
 ; Learnset
 	db 6, MIST
@@ -1667,6 +1663,7 @@ KakunaEvosMoves:
 	db EVOLVE_LEVEL, 10, BEEDRILL
 	db 0
 ; Learnset
+	db 7, HARDEN
 	db 0
 
 BeedrillEvosMoves:
@@ -1757,7 +1754,7 @@ DewgongEvosMoves:
 	db 32, TAKE_DOWN
 	db 40, ICE_BEAM
 	db 50, BLIZZARD
-  db 0
+	db 0
 
 MissingNo79EvosMoves:
 ; Evolutions
@@ -1783,6 +1780,7 @@ MetapodEvosMoves:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0
 ; Learnset
+	db 7, HARDEN
 	db 0
 
 ButterfreeEvosMoves:
@@ -2036,8 +2034,7 @@ MissingNo92EvosMoves:
 
 HaunterEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GENGAR
-	db EVOLVE_LEVEL, 44, GENGAR
+	db EVOLVE_LEVEL, 42, GENGAR
 	db 0
 ; Learnset
 	db 10, SMOG
@@ -2406,7 +2403,6 @@ SquirtleEvosMoves:
 	db 27, BODY_SLAM
 	db 31, WITHDRAW
 	db 33, WATERFALL
-	db 35, ICE_PUNCH
 	db 42, SKULL_BASH
 	db 45, ICE_BEAM
 	db 52, HYDRO_PUMP
@@ -2440,7 +2436,6 @@ WartortleEvosMoves:
 	db 27, BODY_SLAM
 	db 31, WITHDRAW
 	db 33, WATERFALL
-	db 37, ICE_PUNCH
 	db 42, SKULL_BASH
 	db 45, ICE_BEAM
 	db 52, HYDRO_PUMP
