@@ -1,13 +1,13 @@
 SeafoamIslands1FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 33, ZUBAT
-	db 33, KRABBY
-	db 33, KRABBY
-	db 36, GOLBAT
-	db 33, SLOWPOKE
-	db 33, SLOWPOKE
-	db 33, STARYU
-	db 33, SLOWPOKE
+	db 25, ZUBAT
+	db 30, KRABBY
+	db 32, KRABBY
+	db 33, GOLBAT
+	db 35, GOLBAT
+	db 32, SLOWPOKE
+	db 35, SLOWPOKE
+	db 32, GOLBAT
 	db 35, JYNX
 	db 36, JYNX
 	end_grass_wildmons
