@@ -4,12 +4,12 @@ VermilionOldRodHouse_Script:
 VermilionOldRodHouse_TextPointers:
 	def_text_pointers
 	dw_const VermilionOldRodHouseFishingGuruText, TEXT_VERMILIONOLDRODHOUSE_FISHING_GURU
-	dw_const MoveDeleterText1,                    TEXT_VERMILIONOLDRODHOUSE_MOVE_DELETER
+	dw_const MoveDeleterText1,                    TEXT_LAVENDERCUBONEHOUSE_MOVE_DELETER
 
 VermilionOldRodHouseFishingGuruText:
 	text_asm
 	ld a, [wStatusFlags1]
-	bit BIT_GOT_OLD_ROD, a
+	bit BIT_GOT_GOOD_ROD, a
 	jr nz, .got_old_rod
 	ld hl, .DoYouLikeToFishText
 	rst _PrintText
@@ -17,11 +17,11 @@ VermilionOldRodHouseFishingGuruText:
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .refused
-	lb bc, OLD_ROD, 1
+	lb bc, GOOD_ROD, 1
 	call GiveItem
 	jr nc, .bag_full
 	ld hl, wStatusFlags1
-	set BIT_GOT_OLD_ROD, [hl]
+	set BIT_GOT_GOOD_ROD, [hl]
 	ld hl, .TakeThisText
 	jr .print_text
 .bag_full
