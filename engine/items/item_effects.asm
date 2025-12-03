@@ -2493,7 +2493,13 @@ ItemUseTMHM:
 	ld [wCurItem], a
 	pop af
 	ld [wWhichPokemon], a
-	ret
+	ld a, b
+    and a
+    ret z
+    ld a, [wCurItem]
+    call IsItemHM
+    ret c
+    jp RemoveUsedItem
 
 	ld a, [wWhichPokemon]
 	push af
